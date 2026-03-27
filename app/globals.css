@@ -1,27 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --font-playfair: 'Playfair Display', Georgia, serif;
+  --font-inter: 'Inter', system-ui, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: var(--font-inter);
+    color: #0a0a0a;
+    background: #ffffff;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, h4 {
+    font-family: var(--font-playfair);
+    font-weight: 400;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
+@layer components {
+  .section-pad { @apply px-6 md:px-10 lg:px-16; }
+  .container-max { @apply max-w-container mx-auto; }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .btn-gold {
+    @apply inline-flex items-center gap-3 bg-dr-gold text-white text-label uppercase tracking-[0.18em]
+    px-7 py-4 transition-all duration-300 hover:bg-dr-black font-body ;
   }
+  .btn-outline {
+    @apply inline-flex items-center gap-3 border border-dr-black text-dr-black text-label uppercase tracking-[0.18em]
+    px-7 py-4 transition-all duration-300 hover:bg-dr-black hover:text-white font-body;
+  }
+  .btn-outline-white {
+    @apply inline-flex items-center gap-3 border border-white text-white text-label uppercase tracking-[0.18em]
+    px-7 py-4 transition-all duration-300 hover:bg-white hover:text-dr-black font-body;
+  }
+  .label-tag {
+    @apply text-label uppercase tracking-[0.18em] font-body font-semibold text-dr-gold;
+  }
+  .divider { @apply border-t border-dr-border; }
 }
