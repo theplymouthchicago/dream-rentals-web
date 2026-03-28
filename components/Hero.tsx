@@ -11,7 +11,7 @@ export function Hero() {
       {/* Background image */}
       <div
         className="absolute inset-0 bg-cover bg-center scale-105 animate-[subtleZoom_20s_ease-in-out_infinite_alternate]"
-        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1508610048659-a06b669e3321?w=1800&q=80')" }}
+        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=1800&q=80')" }}
       />
       {/* Gradient overlays */}
       <div className="absolute inset-0 bg-gradient-to-t from-dr-black via-dr-black/50 to-dr-black/20" />
