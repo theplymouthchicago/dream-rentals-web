@@ -10,13 +10,13 @@ const team = [
     name: "Sebastian Mysliwiec",
     role: "Co-Founder",
     bio: "Sebastian brings a passion for hospitality and an eye for design to every property in the Dream Rentals portfolio. Since co-founding the company in 2019, he has led the charge on guest experience, brand standards, and property acquisition across Chicago.",
-    img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
+    img: "https://thedreamrentals.com/wp-content/uploads/2024/04/pasted-image-0.png",
   },
   {
     name: "Josh Arnold",
     role: "Co-Founder",
     bio: "Josh oversees operations, revenue strategy, and owner relations at Dream Rentals. His background in real estate and finance has been the engine behind the company's rapid growth to 94 properties and over $5M in annual revenue.",
-    img: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
+    img: "https://thedreamrentals.com/wp-content/uploads/2025/01/Josh-head-shot.png",
   },
 ];
 
@@ -89,7 +89,7 @@ export default function OurTeamPage() {
             </h2>
             <div className="space-y-4 text-dr-muted font-body leading-relaxed">
               <p>Dream Rentals was founded in 2019 by Sebastian Mysliwiec and Josh Arnold with a single property in Chicago&apos;s South Loop. The vision was simple: create short-term rentals that actually feel like a home — not a beige hotel room.</p>
-              <p>Today, we manage 94 properties across Chicago&apos;s finest neighborhoods, from The Loop to Uptown, with a portfolio that generates over $5M annually and consistently earns five-star reviews.</p>
+              <p>Today, we manage 125 properties across Chicago&apos;s finest neighborhoods, from The Loop to Uptown, with a portfolio that generates over $5M annually and consistently earns five-star reviews.</p>
               <p>Every property is personally vetted by our founders. If we wouldn&apos;t be proud to stay there ourselves, it doesn&apos;t make the cut.</p>
             </div>
           </div>
