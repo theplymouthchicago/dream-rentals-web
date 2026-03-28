@@ -1,6 +1,6 @@
 const stats = [
   { value: "94+",   label: "Properties" },
-  { value: "1,600+", label: "5-Star Reviews" },
+  { value: "4,000+", label: "5-Star Reviews" },
   { value: "$5.5M",  label: "2025 Revenue" },
   { value: "24/7",   label: "Guest Support" },
 ];
