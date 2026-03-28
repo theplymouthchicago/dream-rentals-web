@@ -36,7 +36,7 @@ export function Navbar() {
 
         {/* Logo */}
         <Link href="/"
-          className={`font-display text-xl tracking-tight transition-colors duration-300 shrink-0 ${
+          className={`font-display text-2xl md:text-3xl tracking-tight font-semibold transition-colors duration-300 shrink-0 ${
             scrolled ? "text-dr-black" : "text-white"
           }`}>
           Dream Rentals
