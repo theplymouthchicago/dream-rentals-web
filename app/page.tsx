@@ -5,6 +5,7 @@ import { WhyDream } from "@/components/WhyDream";
 import { Stats } from "@/components/Stats";
 import { Testimonials } from "@/components/Testimonials";
 import { CTA } from "@/components/CTA";
+import { ReviewCTA } from "@/components/ReviewCTA";
 
 export const metadata: Metadata = {
   title: "Chicago Vacation Rentals & Corporate Housing | Dream Rentals",
@@ -36,6 +37,7 @@ export default function Home() {
       <Stats />
       <Testimonials />
       <CTA />
+      <ReviewCTA />
     </>
   );
 }
