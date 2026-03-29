@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { fetchListing, fetchListings, PLACEHOLDER_LISTINGS, GuestyListing } from "@/lib/guesty";
+import { fetchListing, fetchListings, PLACEHOLDER_LISTINGS, GuestyListing, getBookingUrl } from "@/lib/guesty";
 import { notFound } from "next/navigation";
 
 export const revalidate = 3600;
@@ -28,7 +28,7 @@ export default async function PropertyPage({ params }: { params: { id: string } 
 
   const photos = listing.pictures?.slice(0, 6) ?? [];
   const hood   = listing.address?.neighborhood || listing.address?.city || "Chicago";
-  const bookingUrl = `https://app.guesty.com/direct-booking/listing/${listing._id}`;
+  const bookingUrl = getBookingUrl(listing._id ?? "");
 
   return (
     <>
