@@ -5,6 +5,7 @@ const nav = [
   { label: "Services", href: "/services" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
+  { label: "Leave a Review", href: "https://g.page/r/CY4CcGFjAoiQEAE/review" },
 ];
 
 export function Footer() {
