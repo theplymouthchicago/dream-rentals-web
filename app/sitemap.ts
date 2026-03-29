@@ -17,5 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/blog/corporate-housing-chicago-guide`,              lastModified: now, changeFrequency: "monthly", priority: 0.6 },
     { url: `${BASE_URL}/blog/chicago-bachelorette-party-guide`,             lastModified: now, changeFrequency: "monthly", priority: 0.6 },
     { url: `${BASE_URL}/blog/short-term-rental-host-tips`,                  lastModified: now, changeFrequency: "monthly", priority: 0.6 },
+        { url: `${BASE_URL}/blog/chicago-corporate-housing-vs-extended-stay-hotels`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
+    { url: `${BASE_URL}/blog/chicago-vacation-rental-vs-hotel`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
   ];
 }

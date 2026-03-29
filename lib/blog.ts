@@ -135,3 +135,58 @@ Managing all of this yourself is possible for one or two properties. At three or
 export function getPost(slug: string): Post | undefined {
   return posts.find(p => p.slug === slug);
 }
+
+// Additional SEO posts
+const additionalPosts = [
+  {
+    slug: "chicago-corporate-housing-vs-extended-stay-hotels",
+    title: "Chicago Corporate Housing: Why Furnished Apartments Beat Extended Stay Hotels",
+    excerpt: "Comparing costs and comfort: why more companies are moving their Chicago business travelers from extended stay hotels into fully furnished apartments.",
+    date: "March 25, 2026",
+    category: "Corporate Housing",
+    readTime: "4 min read",
+    image: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=1200&q=80",
+    body: `A mid-range extended stay hotel in Chicago's Loop runs $180-$250 per night. For a 30-day assignment that's $5,400-$7,500. A fully furnished Dream Rentals apartment in the same neighborhood runs $3,200-$4,500 for the same period and it's a significantly better space.
+
+**More Space, Same Price**
+Extended stay hotel rooms are still hotel rooms. You get a kitchenette instead of a kitchen, a desk instead of a home office, and a parking lot view instead of a city view. A furnished apartment means a real kitchen, a living room, a separate bedroom, and enough space to actually decompress after a long day.
+
+**What Corporate Travelers Actually Want**
+Guests who switched from extended stay hotels to furnished apartments consistently cite the same reasons: in-unit washer and dryer, a full kitchen for cooking, a separate bedroom for better sleep, and no daily housekeeping interruptions.
+
+**The Billing Is Easy**
+The common objection from corporate travel managers is invoicing. Dream Rentals provides corporate invoicing, monthly statements, and tax documentation — everything your finance team needs.
+
+**Chicago Locations That Work for Business**
+The Loop works for the financial district and law firms. River North is close to tech companies and ad agencies. West Loop is ideal for consulting firms on Fulton Market. South Loop is best for McCormick Place conferences.
+
+If your company sends people to Chicago regularly, it is worth having a conversation about corporate housing rates.`,
+  },
+  {
+    slug: "chicago-vacation-rental-vs-hotel",
+    title: "Chicago Vacation Rental vs. Hotel: Which Is Better for Your Trip?",
+    excerpt: "Honest breakdown for families, couples, and groups deciding between a Chicago hotel and a vacation rental — and when each option actually wins.",
+    date: "March 18, 2026",
+    category: "Chicago Guide",
+    readTime: "5 min read",
+    image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&q=80",
+    body: `Chicago has world-class hotels. It also has world-class vacation rentals. Which one is right depends almost entirely on who you are traveling with.
+
+**When a Hotel Makes Sense**
+You are traveling alone on business and want room service and a gym. Your stay is one or two nights and you will not be cooking. You want a specific hotel amenity like a rooftop pool or spa.
+
+**When a Vacation Rental Wins**
+Traveling with a group? Hotel rooms for six people means three rooms at $250 or more each, totaling $750 per night minimum. A 3-bedroom apartment runs $350-$500 per night and everyone stays together.
+
+Staying more than four nights? The full kitchen saves $50-$100 per day on meals, which is $300-$600 over a week-long trip.
+
+Traveling with kids? Hotels with kids are stressful. A vacation rental gives children space to spread out, a kitchen for snacks and meals, and separate bedrooms so adults can stay up after bedtime.
+
+Here for a bachelorette party, birthday, or reunion? A vacation rental is your base of operations. Hotels do not accommodate groups the same way.
+
+**The Bottom Line**
+A Dream Rentals furnished apartment in the Loop or River North gives you more space, a full kitchen, and a real Chicago neighborhood experience for 30 to 50 percent less than a comparable hotel. Book early — Chicago fills up fast from April through October.`,
+  },
+];
+
+posts.push(...additionalPosts);
