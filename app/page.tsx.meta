@@ -1,0 +1,5 @@
+export const metadata = {
+  title: "Chicago Vacation Rentals & Corporate Housing | Dream Rentals",
+  description: "125+ premium furnished apartments in Chicago. Short-term rentals, corporate housing & vacation stays in The Loop, River North, Uptown & more. Book direct and save.",
+  alternates: { canonical: "https://www.thedreamrentals.com" },
+};
