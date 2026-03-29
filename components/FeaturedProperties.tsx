@@ -2,32 +2,36 @@ import Link from "next/link";
 
 const properties = [
   {
-    name: "The Loop Penthouse",
+    name: "Loop Home with Theater & Two Decks",
     neighborhood: "The Loop",
-    beds: 3, baths: 2, guests: 6,
-    img: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&q=80",
+    beds: 4, baths: 3, guests: 16,
+    img: "https://assets.guesty.com/image/upload/w_800,h_600,c_fill/v1710451516/caisg807f3p2nv2kcprg.jpg",
     tag: "Most Popular",
+    id: "6556ab4095fb6e0033d331a4",
   },
   {
-    name: "Uptown Executive Suite",
-    neighborhood: "Uptown",
-    beds: 2, baths: 1, guests: 4,
-    img: "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&q=80",
-    tag: "New",
+    name: "Wicker Park: Sauna, Hot Tub & Rooftop",
+    neighborhood: "Wicker Park",
+    beds: 5, baths: 4, guests: 10,
+    img: "https://assets.guesty.com/image/upload/w_800,h_600,c_fill/v1710451026/vetoysukubut8y1xeoey.jpg",
+    tag: "Guest Favorite",
+    id: "65a9f2c96083ad0010ed7334",
   },
   {
-    name: "South Loop Retreat",
-    neighborhood: "South Loop",
-    beds: 4, baths: 2, guests: 8,
-    img: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&q=80",
-    tag: "Superhost",
-  },
-  {
-    name: "Millennium Park View",
-    neighborhood: "Streeterville",
-    beds: 2, baths: 2, guests: 4,
-    img: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=80",
+    name: "Loop Home — Private Deck & Game Room",
+    neighborhood: "The Loop",
+    beds: 4, baths: 3, guests: 16,
+    img: "https://assets.guesty.com/image/upload/w_800,h_600,c_fill/v1710451516/k41hozrhvqvudkgakk1a.jpg",
     tag: null,
+    id: "6556ab4095fb6e0033d331a4",
+  },
+  {
+    name: "Wicker Park Luxury Home",
+    neighborhood: "Wicker Park",
+    beds: 5, baths: 4, guests: 10,
+    img: "https://assets.guesty.com/image/upload/w_800,h_600,c_fill/v1738640536/production/6421ee060f19fa002b02d85a/taovarln2xwn0ctzy8dz.jpg",
+    tag: "New",
+    id: "65a9f2c96083ad0010ed7334",
   },
 ];
 
@@ -44,18 +48,23 @@ export function FeaturedProperties() {
             </h2>
           </div>
           <Link href="/properties" className="btn-outline hidden md:inline-flex">
-            View All 94
+            View All 125+
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
             </svg>
           </Link>
         </div>
 
-        {/* Grid — Wander style */}
+        {/* Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-dr-border">
-          {properties.map((p) => (
-            <Link key={p.name} href="/properties"
-              className="group bg-white flex flex-col overflow-hidden hover:z-10 transition-shadow duration-300 hover:shadow-2xl">
+          {properties.map((p, i) => (
+            <Link
+              key={i}
+              href={`https://dreamchicagorentals.guestybookings.com/listing/${p.id}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group bg-white flex flex-col overflow-hidden hover:z-10 transition-shadow duration-300 hover:shadow-2xl"
+            >
               {/* Photo */}
               <div className="relative aspect-[4/3] overflow-hidden">
                 {p.tag && (
@@ -83,7 +92,7 @@ export function FeaturedProperties() {
         </div>
 
         <Link href="/properties" className="btn-outline mt-10 md:hidden inline-flex">
-          View All 94 Properties
+          View All 125+ Properties
         </Link>
       </div>
     </section>
