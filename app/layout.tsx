@@ -31,6 +31,7 @@ export const metadata: Metadata = {
   creator: "Dream Rentals",
   publisher: "Dream Rentals",
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
+  verification: { google: '1WjVUp-Yfa17ewQMT7vFCijvl-wI6gZT4orHUjp1z-8' },
   alternates: { canonical: BASE_URL },
   openGraph: {
     title: "Chicago Vacation Rentals & Corporate Housing | Dream Rentals",
