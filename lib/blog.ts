@@ -132,11 +132,7 @@ Managing all of this yourself is possible for one or two properties. At three or
   },
 ];
 
-export function getPost(slug: string): Post | undefined {
-  return posts.find(p => p.slug === slug);
-}
 
-// Additional SEO posts
 const additionalPosts = [
   {
     slug: "chicago-corporate-housing-vs-extended-stay-hotels",
@@ -187,6 +183,135 @@ Here for a bachelorette party, birthday, or reunion? A vacation rental is your b
 **The Bottom Line**
 A Dream Rentals furnished apartment in the Loop or River North gives you more space, a full kitchen, and a real Chicago neighborhood experience for 30 to 50 percent less than a comparable hotel. Book early — Chicago fills up fast from April through October.`,
   },
+  {
+    slug: "bachelorette-party-rentals-chicago",
+    title: "Best Bachelorette Party Rentals in Chicago: Your Complete Guide",
+    excerpt: "The ultimate guide to finding the perfect Chicago bachelorette party house — what to look for, which neighborhoods to book, and why renting beats a hotel every time.",
+    date: "March 28, 2026",
+    category: "Chicago Guide",
+    readTime: "5 min read",
+    image: "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=1200&q=80",
+    body: `Chicago is one of the top bachelorette party destinations in the country. Great restaurants, incredible nightlife, a beautiful lakefront, and enough energy to keep a group going for a full weekend. The only thing that can make or break it is where you stay.
+
+**Why a rental beats a hotel for bachelorette parties**
+
+Hotels give you separate rooms, shared walls, and a noise policy enforced at 10pm. A rental gives you a whole house — one space where the whole group is together, a kitchen to pre-game, a living room to debrief after the bars, and no one knocking on your door.
+
+For a group of 8 to 16, the math is obvious too. Three hotel rooms at $250 per night each is $750 per night. A 4-bedroom Chicago rental for 16 guests runs $400 to $600 per night and keeps everyone together.
+
+**What to look for in a bachelorette rental**
+
+Start with space. The best bachelorette rentals have multiple bathrooms, a big kitchen for catering or cooking together, and a living room large enough to actually host the group. Outdoor space such as a deck, rooftop, or backyard is a major bonus.
+
+Extras that elevate a bachelorette rental: a sauna, hot tub, game room, or theater room. Dream Rentals has properties with all of the above.
+
+**Best Chicago neighborhoods for bachelorette parties**
+
+Wicker Park is the most popular neighborhood for groups. Excellent bar scene, walkable, slightly more local than River North. Great restaurant row on Division Street.
+
+River North has the highest concentration of clubs and bottle service. If the plan involves a big night out, this puts you walking distance from most of it.
+
+The Loop and South Loop are better for groups who want a mix of sightseeing, brunch spots, and a nicer atmosphere with walkable access to Millennium Park and the Riverwalk.
+
+Lincoln Park is more laid-back, great for a wine-and-dinner vibe versus a hard party weekend.
+
+**How far in advance should you book?**
+
+For summer weekends and major holidays, book at least 6 to 8 weeks out. Chicago fills up fast for bachelorette season. Spring and fall are slightly easier but still competitive.
+
+Dream Rentals has Chicago properties with 2 to 10 bedrooms specifically suited for groups. Every property is fully furnished, professionally cleaned, and stocked with everything you need. Book directly at thedreamrentals.com for the best rates.`,
+  },
+  {
+    slug: "chicago-group-vacation-rentals",
+    title: "Chicago Group Vacation Rentals: Everything You Need to Know",
+    excerpt: "Planning a trip to Chicago with a big group? Here is how to find the right rental, what to expect, and why groups consistently save 40-60% compared to booking hotel rooms.",
+    date: "March 26, 2026",
+    category: "Chicago Guide",
+    readTime: "4 min read",
+    image: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1200&q=80",
+    body: `Chicago is one of the most group-friendly cities in the country. Whether you are planning a family reunion, a corporate retreat, a birthday weekend, or just a trip with old friends, the city has everything you need. The key is finding the right place to stay.
+
+**The math on group rentals**
+
+Hotels price by room. Groups pay per room. For a group of 12, you need at least 4 hotel rooms and at $200 to $300 per room that is $800 to $1,200 per night just for beds. A 4-bedroom Dream Rentals property that sleeps 12 to 16 people runs $400 to $600 per night. You save 40 to 60 percent and get significantly more space.
+
+**What to look for**
+
+Bedroom count matters, but so does bathroom count. A 4-bedroom home with 2 bathrooms creates a bottleneck every morning. Look for at least one bathroom per two bedrooms.
+
+Kitchen size matters for groups. Full-size kitchens mean you can do one grocery run and cook a few meals together, saving hundreds on food costs over a weekend.
+
+**Best group properties in Chicago**
+
+Our most popular group properties include a 4-bedroom Loop home with a private theater and two decks that sleeps 16, a 5-bedroom Wicker Park home with a sauna, hot tub, and rooftop that sleeps 10, and a variety of 2 and 3-bedroom properties throughout the city for smaller groups.
+
+**Neighborhoods that work for groups**
+
+The Loop is centrally located and walkable to the main attractions. Wicker Park has a great local bar and restaurant scene. Lincoln Park is quieter and better for families. South Loop puts you close to the Museum Campus, Soldier Field, and the lakefront.
+
+Book early for summer and holiday weekends. Book direct at thedreamrentals.com to avoid platform fees.`,
+  },
+  {
+    slug: "chicago-furnished-apartments-month-to-month",
+    title: "Chicago Furnished Apartments Month to Month: What to Know Before You Book",
+    excerpt: "Month-to-month furnished apartments in Chicago are in high demand. Here is what they cost, where to find them, and what to watch for when comparing options.",
+    date: "March 22, 2026",
+    category: "Corporate Housing",
+    readTime: "4 min read",
+    image: "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=1200&q=80",
+    body: `Month-to-month furnished apartments in Chicago are one of the most in-demand housing products in the city. Traditional apartment listings require a 12-month lease. Hotels charge $150 to $250 per night. Furnished month-to-month fills the gap with flexible terms, real apartments, and pricing that makes sense.
+
+**Who needs month-to-month furnished apartments**
+
+The most common scenarios: a corporate relocation where permanent housing is not ready, a contract worker on a 60 to 90 day assignment, a family displaced by renovation, someone who just moved to Chicago and needs a base while apartment hunting, or a remote worker trying a new city for a few months.
+
+**What they cost in Chicago**
+
+A furnished 1-bedroom in the Loop or River North runs $2,500 to $4,000 per month. A 2-bedroom runs $3,500 to $5,500. A 3-bedroom for a family starts around $4,500. Compared to a hotel at $200 per night, even a $4,000 per month furnished apartment is a 35 percent savings before you factor in having a kitchen, washer/dryer, and a space that actually feels like home.
+
+**What to look for**
+
+All-inclusive pricing. Make sure you know what is included: utilities, WiFi, parking, cleaning. Dream Rentals pricing is all-in with no surprise charges.
+
+Flexibility on start and end dates. Dream Rentals can accommodate mid-month arrivals and flexible end dates. Minimum stay is 30 days with options for 60 and 90 day agreements.
+
+**Best Chicago neighborhoods for monthly stays**
+
+For business travelers: The Loop, River North, and West Loop. For families: Lincoln Park and Lakeview. For a quieter base: Hyde Park and South Loop.
+
+Contact Dream Rentals at info@dreamchi.org for monthly pricing and availability.`,
+  },
+  {
+    slug: "chicago-airbnb-alternatives-direct-booking",
+    title: "Chicago Airbnb Alternatives: Why Direct Booking Saves You More",
+    excerpt: "Airbnb fees in Chicago can add 20-25% to your total cost. Here is how to find the same properties directly and what you get when you book without the middleman.",
+    date: "March 20, 2026",
+    category: "Chicago Guide",
+    readTime: "3 min read",
+    image: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1200&q=80",
+    body: `If you have ever booked a Chicago vacation rental on Airbnb and noticed the price jumped significantly between the listing rate and the checkout total, you have experienced platform fees firsthand. Airbnb charges guests a service fee of 14 to 16 percent. Add cleaning fees, city taxes, and sometimes a booking fee, and a $300 per night listing can easily cost $420 to $450 per night at checkout.
+
+**What direct booking actually saves**
+
+When you book directly with Dream Rentals, you pay the nightly rate, taxes, and cleaning. No Airbnb service fee. On a 4-night stay at $300 per night, direct booking saves $150 to $250. On a week-long stay you are often saving $300 to $400 compared to the same property booked through Airbnb.
+
+**How to find Chicago rentals with direct booking**
+
+Search for property management companies in Chicago rather than individual Airbnb hosts. Dream Rentals operates 125+ properties and offers direct booking through thedreamrentals.com. You get the same or better property with cleaner pricing and direct communication with the management team.
+
+**What you get with direct booking beyond price**
+
+Faster response times. Direct booking means you can contact the team directly without going through an app.
+
+Flexibility. Direct bookings are easier to modify, extend, or customize. Need to add a night or arrive early? Direct booking makes that a quick conversation.
+
+Better rates for longer stays. Dream Rentals offers negotiated rates for stays of 7 nights, 30 nights, or longer.
+
+Browse 125+ Chicago properties at thedreamrentals.com. Every property available on Airbnb under Dream Chicago Rentals is available to book directly at a lower total cost.`,
+  },
 ];
 
 posts.push(...additionalPosts);
+export function getPost(slug: string): Post | undefined {
+  return posts.find((p) => p.slug === slug);
+}
