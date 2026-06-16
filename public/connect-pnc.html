@@ -28,26 +28,59 @@ button:disabled{opacity:.5;cursor:not-allowed}
 </div>
 <script src="https://cdn.plaid.com/link/v2/stable/link-initialize.js"></script>
 <script>
-var LINK_TOKEN = 'link-production-177e63ed-b627-4ae3-8e92-6ee8f741514b';
-function go(){
+var LINK_TOKEN = 'link-production-a6775696-9af7-4171-8b2b-5b4bff91ead5';
+var CLIENT_ID = '69dfca624f4141000dc0a788';
+var SECRET = 'e11f5a08ebf988d1a8764053a97680';
+
+var params = new URLSearchParams(window.location.search);
+var oauthStateId = params.get('oauth_state_id');
+
+if (oauthStateId) {
+  document.getElementById('status').innerText = 'Resuming PNC connection...';
+  openPlaid();
+}
+
+function openPlaid() {
   document.getElementById('btn').disabled = true;
   document.getElementById('status').innerText = 'Opening Plaid secure connection...';
-  var h = Plaid.create({
+  var config = {
     token: LINK_TOKEN,
     onSuccess: function(pt, md) {
-      document.getElementById('status').innerHTML =
-        '<div class="success">✅ PNC Connected! Send this token to Jakobi:</div>' +
-        '<div class="token">' + pt + '</div>';
-      document.getElementById('btn').style.display='none';
+      exchangeToken(pt);
     },
     onExit: function(e, md) {
       document.getElementById('btn').disabled = false;
-      document.getElementById('status').innerText = e ? ('Error: ' + e.display_message) : 'Cancelled — try again.';
+      document.getElementById('status').innerText = e ? ('Error: ' + (e.display_message || e.error_message || JSON.stringify(e))) : 'Cancelled — try again.';
     },
-    onLoad: function() { document.getElementById('status').innerText = ''; }
-  });
+    onLoad: function() { if (!oauthStateId) document.getElementById('status').innerText = ''; }
+  };
+  if (oauthStateId) {
+    config.receivedRedirectUri = window.location.href;
+  }
+  var h = Plaid.create(config);
   h.open();
 }
+
+async function exchangeToken(public_token) {
+  document.getElementById('status').innerText = 'Exchanging token with Plaid...';
+  try {
+    var r = await fetch('https://production.plaid.com/item/public_token/exchange', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({client_id: CLIENT_ID, secret: SECRET, public_token: public_token})
+    });
+    var data = await r.json();
+    document.getElementById('status').innerHTML =
+      '<div class="success">✅ PNC Connected! Send this to Jakobi:</div>' +
+      '<div class="token"><strong>Access Token:</strong><br>' + data.access_token + '<br><br><strong>Item ID:</strong><br>' + data.item_id + '</div>';
+    document.getElementById('btn').style.display = 'none';
+  } catch(e) {
+    document.getElementById('status').innerText = 'Exchange error: ' + e.message;
+    document.getElementById('btn').disabled = false;
+  }
+}
+
+function go() { openPlaid(); }
 </script>
 </body>
 </html>
