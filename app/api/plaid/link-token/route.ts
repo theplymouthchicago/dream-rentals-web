@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server'
 
-export async function GET() {
+export async function GET(req: Request) {
+  const origin = new URL(req.url).origin
   const r = await fetch('https://production.plaid.com/link/token/create', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
@@ -12,7 +13,7 @@ export async function GET() {
       language: 'en',
       user: { client_user_id: 'josh-dream-rentals' },
       products: ['transactions', 'auth'],
-      redirect_uri: 'https://thedreamrentals.com/connect-pnc',
+      redirect_uri: `${origin}/connect-pnc`,
     })
   })
   const data = await r.json()

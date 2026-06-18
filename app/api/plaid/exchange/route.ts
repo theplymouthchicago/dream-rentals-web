@@ -27,7 +27,7 @@ export async function POST(req: Request) {
     try {
       writeFileSync('/Users/jakobi/.openclaw/workspace/plaid/plaid_token.json', 
         JSON.stringify(tokenData, null, 2))
-    } catch(e) {
+    } catch {
       // Running on Vercel/remote — token captured in response
     }
     return NextResponse.json({ success: true, item_id: data.item_id })
